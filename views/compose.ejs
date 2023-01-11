@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+<h1>Compose</h1>
+<div class="background-form">
+<form class="form" action="/compose" method="post">
+  <div class="form-group">
+    <label for="postTitle">Title</label>
+    <input type="text" class="form-control" id="postTitle" name="postTitle" placeholder="Enter Post Title">
+  </div>
+  <div class="form-group">
+    <label for="postBody">Body</label>
+    <textarea class="form-control" id="postBody" name="postBody" rows="3"></textarea>
+  </div>
+  
+ <!-- Attach the image -->
+  <div class="form-group">
+    <input type="file" class="form-control-file" id="postImage" name="postImage">
+  </div>
+
+  <button id="btn" type="submit" class="btn btn-primary">Publish</button>
+</form>
+</div>
+
+<%- include("partials/footer.ejs") %>
